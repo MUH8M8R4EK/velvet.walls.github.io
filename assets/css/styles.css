@@ -576,6 +576,7 @@ body {
     .studio-text {
         font-size: 18px;
         letter-spacing: 5px;
+        bottom: 200px;
     }
     
     .about-section h2,
