@@ -443,7 +443,7 @@ body {
 /* Contact Section */
 .contact-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: url('../images/gradient_stars.png') center/cover no-repeat;
     color: var(--white);
     text-align: center;
 }
@@ -695,6 +695,12 @@ body {
     .contact-section h2 {
         font-size: 28px;
     }
+
+    .contact-section {
+        padding: 10px 0;
+        min-height: auto;
+    }
+
     
     .carousel-slide:not(.active) {
         width: 20%;
