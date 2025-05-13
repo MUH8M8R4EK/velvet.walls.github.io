@@ -446,17 +446,33 @@ body {
     background: url('../images/gradient_stars.png') center/cover no-repeat;
     color: var(--white);
     text-align: center;
+    position: relative;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(205, 133, 168, 0.4);
+    z-index: 1;
 }
 
 .contact-section h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-subtitle {
     font-size: 20px;
     margin-bottom: 40px;
     opacity: 0.9;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-buttons {
@@ -464,6 +480,8 @@ body {
     gap: 20px;
     justify-content: center;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 .consultation-btn {
@@ -475,6 +493,8 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: var(--transition);
+    position: relative;
+    z-index: 2;
 }
 
 .consultation-btn:hover {
@@ -491,6 +511,8 @@ body {
     border-radius: 30px;
     cursor: pointer;
     transition: var(--transition);
+    position: relative;
+    z-index: 2;
 }
 
 .signup-btn:hover {
@@ -503,6 +525,8 @@ body {
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-item {
@@ -588,6 +612,10 @@ body {
     .services-section h2,
     .portfolio-section h2,
     .testimonials-section h2,
+    .contact-section {
+        padding: 80px 0;
+    }
+
     .contact-section h2 {
         font-size: 36px;
     }
@@ -692,6 +720,10 @@ body {
     .services-section h2,
     .portfolio-section h2,
     .testimonials-section h2,
+    .contact-section {
+        padding: 60px 0;
+    }
+
     .contact-section h2 {
         font-size: 28px;
     }
